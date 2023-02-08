@@ -64,8 +64,8 @@ p i{
   font-style: normal;
 }
 
-p.alignlft{
-	text-align: left;
+.alignlft{
+	text-align: left!important;
 }
 
 a.button.primary{
