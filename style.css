@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'Overpass';
+  src:  url('./misc/Overpass-VariableFont_wght.ttf') format('truetype');
+}
+
+html{
+	background: hsl(216, 12%, 8%);
+	color: hsl(217, 12%, 63%);
+
+	font-family: Overpass, sans-serif;
+  text-align: center;
+}
+
+body{
+	min-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.thankyou img{
+  background: none;
+}
+
+.hidden{
+	display: none;
+}
+
+@media screen and (min-width:376px){
+  main{
+  	max-width: 20rem;
+  }
+}
+
+div.box{
+	padding: 2em;
+
+	background: rgb(2,0,36);
+	background: linear-gradient(0deg, hsl(213, 19%, 18%) 0%, #222834 100%);
+
+	border-radius: 24px;
+  text-align: center;
+  font-size: .85rem;
+}
+
+.darkblue-rounded{
+  display: inline-block;
+  padding: 0.6rem;
+
+	background: hsl(213, 19%, 18%);
+	border-radius: 2em;
+	color: hsl(25, 97%, 53%);
+}
+
+div.box h1{
+	margin: 0.5em 0;
+
+	font-size: 1.25rem;
+	color: #fff;
+}
+
+p i{
+  font-style: normal;
+}
+
+p.alignlft{
+	text-align: left;
+}
+
+a.button.primary{
+	display: block;
+	padding: 1em;
+	border-radius: 2em;
+
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: .25em;
+	color: #fff;
+	background: hsl(25, 97%, 53%);
+
+  cursor: pointer;
+}
+
+a.button.primary:hover{
+	background: #fff;
+	color: hsl(25, 97%, 53%);
+}
+
+footer {
+  margin-top: 3em;
+	min-width: 100%;
+
+	font-size: 0.688rem;
+	color: hsl(217, 12%, 63%);
+}
+
+.ratingcontainer{
+  display: flex;
+  justify-content: space-between;
+  cursor: unset;
+}
+
+a.my-rating{
+  display: inline-block;
+  padding: 1rem;
+  height: 0.8em;
+  width: 0.8em;
+  cursor: pointer;
+
+  text-decoration: none;
+  background: hsl(213, 19%, 18%);
+  border-radius: 50%;
+  color: hsl(217, 12%, 63%);
+}
+
+a.my-rating:hover{
+  background: hsl(25, 97%, 53%);
+	color: #fff;
+}
+
+a.my-rating:focus{
+  background: hsl(217, 12%, 63%);
+	color: #fff;
+}
+
+#ratingdisplay{
+  padding: 0;
+
+  background: none;
+	color: hsl(217, 12%, 63%);
+  font-family: Overpass, sans-serif;
+  text-align: center;
+  font-size: .85rem;
+  border: 0;
+}
