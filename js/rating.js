@@ -16,12 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
   })(); // end of rate function
 
   (function () {
-    var submitbttn = document.getElementById("submitbttn");
+    let submitbttn = document.getElementById("submitbttn");
     submitbttn.onclick = function(){
       if(document.querySelector('#ratingdisplay').value != ''){
         console.log("Button pressed");
-        var ratingbox = document.querySelector(".userrating");
-        var thankyoubox = document.querySelector(".thankyou");
+        let ratingbox = document.querySelector(".userrating");
+        let thankyoubox = document.querySelector(".thankyou");
 
         ratingbox.style.display = "none";
         thankyoubox.style.display = "block";
